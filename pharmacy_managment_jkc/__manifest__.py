@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Pharmacy module",
+    'name': "Pharmacy Management",
 
     'summary': """
         Pharmacy
