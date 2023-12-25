@@ -1,5 +1,3 @@
-# custom_medicine_company/models/medicine_company.py
-
 from odoo import api, fields, models, _
 import re
 from odoo.exceptions import ValidationError
