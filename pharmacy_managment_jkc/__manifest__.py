@@ -18,7 +18,7 @@
     'version': '17.0.1.0.0',
 
     # any module necessary for this one to work correctly
-    'depends': ['hr_contract', 'hr', 'hr_payroll', 'stock', 'account','account_avatax', 'purchase', 'sale_management', 'mail'],
+    'depends': ['hr_contract', 'hr', 'hr_payroll', 'stock', 'account', 'purchase', 'sale_management', 'mail'],
     # 'product',
 
     # always loaded
