@@ -1,5 +1,3 @@
-# custom_pharmacy_sale_order/models/pharmacy_sale_order.py
-
 from odoo import models, fields, api, _
 from odoo.exceptions import UserError
 
