@@ -1,5 +1,3 @@
-# custom_medicine_type/models/medicine_type.py
-
 from odoo import models, fields
 
 class MedicineType(models.Model):
