@@ -1,5 +1,3 @@
-# custom_medicine_category/models/medicine_category.py
-
 from odoo import models, fields
 
 
