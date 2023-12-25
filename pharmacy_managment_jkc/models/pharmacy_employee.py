@@ -1,5 +1,3 @@
-# custom_pharmacy_employee/models/pharmacy_employee.py
-
 from odoo import models, fields
 
 class PharmacyEmployee(models.Model):
