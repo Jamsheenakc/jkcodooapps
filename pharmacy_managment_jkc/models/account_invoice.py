@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-import itertools
-from datetime import datetime
 from odoo import models, fields, api, _
 from odoo.exceptions import UserError
 
