@@ -4,15 +4,15 @@
     <data>
 
         <record id="view_medicine_company_tree" model="ir.ui.view">
-            <field name="name">medicine.company.tree</field>
+            <field name="name">medicine.company.list</field>
             <field name="model">medicine.company</field>
             <field name="arch" type="xml">
-                <tree string="Medicine Companies">
+                <list string="Medicine Companies">
                     <field name="name"/>
                     <field name="supplier_id"/>
                     <!--                    <field name="contact_person"/>-->
                     <field name="phone"/>
-                </tree>
+                </list>
             </field>
         </record>
 
@@ -40,7 +40,7 @@
         <record id="action_medicine_company" model="ir.actions.act_window">
             <field name="name">Manufacture Company</field>
             <field name="res_model">medicine.company</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
         </record>
         <menuitem id="menu_medicine_company" name="Medicine Company" sequence="2"
                   parent="pharmacy_managment_jkc.menu_configuration"

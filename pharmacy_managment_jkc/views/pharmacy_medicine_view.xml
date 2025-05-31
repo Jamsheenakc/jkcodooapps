@@ -6,7 +6,7 @@
         <field name="model">product.template</field>
         <field name="inherit_id" ref="product.product_template_only_form_view"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='detailed_type']" position="after">
+            <xpath expr="//field[@name='type']" position="after">
                 <field name="medicine_type_id"/>
                 <field name="category_id"/>
                 <field name="medicine_company_id"/>
@@ -32,7 +32,7 @@
         <field name="model">product.product</field>
         <field name="inherit_id" ref="product.product_normal_form_view"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='detailed_type']" position="after">
+            <xpath expr="//field[@name='type']" position="after">
                 <field name="medicine_type_id"/>
                 <field name="category_id"/>
                 <field name="medicine_company_id"/>
@@ -58,16 +58,16 @@
 
 
 
-    <record id="view_pharmacy_medicine_page" model="ir.ui.view">
-        <field name="name">pharmacy.medicine.form</field>
-        <field name="model">product.template</field>
-        <field name="inherit_id" ref="account.product_template_form_view"/>
-        <field name="arch" type="xml">
-            <xpath expr="//page[@name='invoicing']" position="attributes">
-                <attribute name="invisible">True</attribute>
-            </xpath>
-        </field>
-    </record>
+<!--    <record id="account_view_pharmacy_medicine_page" model="ir.ui.view">-->
+<!--        <field name="name">pharmacy.medicine.form</field>-->
+<!--        <field name="model">product.template</field>-->
+<!--        <field name="inherit_id" ref="account.product_template_form_view"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <xpath expr="//page[@name='invoicing']" position="attributes">-->
+<!--                <attribute name="invisible">True</attribute>-->
+<!--            </xpath>-->
+<!--        </field>-->
+<!--    </record>-->
 
     <record id="view_pharmacy_medicine_page" model="ir.ui.view">
         <field name="name">pharmacy.medicine.form</field>
@@ -80,9 +80,9 @@
             <xpath expr="//field[@name='product_tooltip']" position="attributes">
                 <attribute name="invisible">True</attribute>
             </xpath>
-            <xpath expr="//button[@name='%(product.product_tag_action)d']" position="attributes">
-                <attribute name="invisible">True</attribute>
-            </xpath>
+<!--            <xpath expr="//button[@name='%(product.product_tag_action)d']" position="attributes">-->
+<!--                <attribute name="invisible">True</attribute>-->
+<!--            </xpath>-->
             <xpath expr="//field[@name='company_id']" position="attributes">
                 <attribute name="invisible">True</attribute>
             </xpath>
